@@ -27,21 +27,91 @@ nav {
 
     grid-area: nav;
     background-color: #283171;
-    width: 100%;
-    height: 100px;
+   /* width: 100%;
+    height: 100px;*/
 }
 
+/* Responsive */
+
+@media screen and (min-width: 320px) {
+    #main {
+        grid-template-columns: auto ;
+        grid-template-rows: 15% 10% auto 15%;
+        grid-template-areas: "header" "nav" "section" "footer";
+}
+    #sectionServicios,#sectionProyectos {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-content: space-evenly;
+        align-content: center;
+}
+    section{
+        grid-template-columns: 1;
+        grid-template-rows:1;
+        justify-content: space-evenly;
+        align-content: center;
+}
+
+ 
+    #ulNav{
+        display: none;
+    }
+
+   /* nav {
+        justify-content: space-around;
+    }*/
+
+}
+
+@media screen and (min-width: 1200px) {
+    #main {
+    
+        grid-template-columns: 15% auto;
+        grid-template-rows: 15% 10% auto 15%;
+        grid-template-areas: "header header" "nav nav" "section section" "footer footer";
+    
+        /*column-gap: 15px;
+        row-gap: 15px;*/
+        
+    }
+    #sectionServicios,#sectionNosotros {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+    
+        justify-content: space-evenly;
+        align-content: center;
+    
+        /*column-gap: 15px;
+        row-gap: 15px;*/
+        }
+
+    #ulNav{
+
+        display: flex;
+    }
+
+    #menuBurger {
+
+            display: none;
+        }
+
+   /* nav {
+        justify-content: space-around;
+    }*/
+    
+}
 
 
 
 /*      Menu    */
 
 nav ul{
-    display: flex;
     list-style: none;
     flex-direction: row;
     align-content: center;
     justify-content: space-evenly;
+    padding:25px ;
+    margin: auto;
 }
 
 /*  Body  */
@@ -54,7 +124,7 @@ nav ul{
     justify-content: center;
 
     margin: auto;
-    padding: 10px;
+    padding: 20px;
 
 }
 
@@ -147,73 +217,3 @@ section {
     column-gap: 10px;
     row-gap: 10px;
 }*/
-
-@media screen and (min-width: 320px) {
-    #main {
-        grid-template-columns: auto ;
-        grid-template-rows: 15% 10% auto 15%;
-        grid-template-areas: "header" "nav" "section" "footer";
-}
-    #sectionServicios,#sectionProyectos {
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(3, auto);
-        justify-content: space-evenly;
-        align-content: center;
-}
-    section{
-        grid-template-columns: 1;
-        grid-template-rows:1;
-        justify-content: space-evenly;
-        align-content: center;
-}
-
- 
-    #ulNav{
-        display: none;
-    }
-
-   /* nav {
-        justify-content: space-around;
-    }*/
-
-}
-
-@media screen and (min-width: 1200px) {
-    #main {
-    
-        grid-template-columns: 15% auto;
-        grid-template-rows: 15% 10% auto 15%;
-        grid-template-areas: "header header" "nav nav" "section section" "footer footer";
-    
-        /*column-gap: 15px;
-        row-gap: 15px;*/
-        
-    }
-    #sectionServicios,#sectionNosotros {
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(3, auto);
-    
-        justify-content: space-evenly;
-        align-content: center;
-    
-        /*column-gap: 15px;
-        row-gap: 15px;*/
-        }
-
-    #ulNav{
-
-        display: flex;
-    }
-
-    #menuBurger {
-
-            display: none;
-        }
-
-   /* nav {
-        justify-content: space-around;
-    }*/
-    
-}
-
-
