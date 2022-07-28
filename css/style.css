@@ -1,0 +1,219 @@
+body{
+
+    background-color: #F4F4F4;
+}
+
+/* Areas Grilla*/
+
+header {
+    grid-area: header;
+   
+}
+
+footer {
+    grid-area: footer;
+    background-color: #283171;
+    width: 100%;
+    height: 100px;
+}
+
+section {
+    /*background-color: #d9ff00;*/
+    grid-area: section;
+    
+}
+
+nav {
+
+    grid-area: nav;
+    background-color: #283171;
+    width: 100%;
+    height: 100px;
+}
+
+
+
+
+/*      Menu    */
+
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+/*  Body  */
+
+.centradoLogo {
+
+    display: flex;
+
+    align-content: center;
+    justify-content: center;
+
+    margin: auto;
+    padding: 10px;
+
+}
+
+.fuente{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    text-align: start;
+    text-decoration: none;
+    color: white;
+}
+
+.fuenteTexto{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    text-align: start;
+    text-decoration: none;
+    color: black;
+}
+
+.carrusel{
+
+    display: flex;
+    justify-content: center;
+
+    margin: 2% auto 2% auto;
+   
+    padding: 2% auto 2% auto;
+    
+    width: 50%;
+    font-size: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#Inicio{
+
+    font-size: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+.fuenteContactbox{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: start;
+    text-decoration: none;
+}
+
+#articleIndex{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/*  Footer  */
+
+ footer ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer ul li{
+    margin: 10px;
+    padding: 10px;
+}
+
+ /* Grillas */
+
+#main,
+section {
+    display: grid;
+}
+
+/*#main {
+    column-gap: 10px;
+    row-gap: 10px;
+}*/
+
+@media screen and (min-width: 320px) {
+    #main {
+        grid-template-columns: auto ;
+        grid-template-rows: 15% 10% auto 15%;
+        grid-template-areas: "header" "nav" "section" "footer";
+}
+    #sectionServicios,#sectionProyectos {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-content: space-evenly;
+        align-content: center;
+}
+    section{
+        grid-template-columns: 1;
+        grid-template-rows:1;
+        justify-content: space-evenly;
+        align-content: center;
+}
+
+ 
+    #ulNav{
+        display: none;
+    }
+
+   /* nav {
+        justify-content: space-around;
+    }*/
+
+}
+
+@media screen and (min-width: 1200px) {
+    #main {
+    
+        grid-template-columns: 15% auto;
+        grid-template-rows: 15% 10% auto 15%;
+        grid-template-areas: "header header" "nav nav" "section section" "footer footer";
+    
+        /*column-gap: 15px;
+        row-gap: 15px;*/
+        
+    }
+    #sectionServicios,#sectionNosotros {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+    
+        justify-content: space-evenly;
+        align-content: center;
+    
+        /*column-gap: 15px;
+        row-gap: 15px;*/
+        }
+
+    #ulNav{
+
+        display: flex;
+    }
+
+    #menuBurger {
+
+            display: none;
+        }
+
+   /* nav {
+        justify-content: space-around;
+    }*/
+    
+}
+
+
