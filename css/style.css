@@ -7,6 +7,9 @@ body{
 
 header {
     grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-content: center;
    
 }
 
@@ -20,6 +23,8 @@ footer {
 section {
     /*background-color: #d9ff00;*/
     grid-area: section;
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -27,8 +32,9 @@ nav {
 
     grid-area: nav;
     background-color: #283171;
-   /* width: 100%;
-    height: 100px;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
 }
 
 /* Responsive */
