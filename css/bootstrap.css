@@ -3816,6 +3816,8 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  background-color: #283171;
+
 }
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
