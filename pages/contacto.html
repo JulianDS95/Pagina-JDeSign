@@ -48,34 +48,14 @@
     
     
     <section>
-        <article>
-            <form>
-                <fieldset class="fuenteTexto">
-            
-                    <legend>Informacion personal: </legend>
-                    <label for="sexo">Sexo: </label>
-                    <br>
-            
-                        <input type="radio" id="genero1" name="sexo" value="genero1" />
-                        <label class="fuenteContactbox" for="genero1"> Masculino</label>
-            
-                        <input type="radio" id="genero2" name="sexo" value="genero2" />
-                        <label class="fuenteContactbox" for="genero2"> Femenino</label>
-                        
-                        <br>
-                        
-                        <label class="fuenteContactbox" for="nombre"> <br> Nombre y apellido: <br></label>	
-                        <input type="text" name="nombre" value="Ingrese su nombre"/>
-                        <label class="fuenteContactbox" for="email"><br> E-mail: <br></label>	
-                        <input type="text" name="E-mail" placeholder="Ingrese su E-mail" />
-                        <label class="fuenteContactbox" for="consulta"><br> Consulta: <br></label>	
-                        <input type="text" name="Consulta" placeholder="Consulta" />
-                                                  
-                        <input type="submit" value="Enviar" />
-                
-                    </fieldset>
-            </form>    
-        </article>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Direccion de Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button type="button" class="btn btn-primary">Enviar</button>
     </section>
     <footer>
 
