@@ -1,310 +1,131 @@
-body{
-
-    background-color: #F4F4F4;
+body {
+  background-color: #F4F4F4;
 }
 
-/* Areas Grilla*/
-
 header {
-    grid-area: header;
-    display: flex;
-    justify-content: start;
-    align-content: center;
-   
+  display: flex;
+  align-content: center;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+header nav .navbar-nav, header nav .container-fluid {
+  background-color: #F4F4F4;
+}
+header nav .navbar-toggler, header nav .navbar-toggler-icon {
+  border-color: #283171;
+}
+header nav .navbar-brand {
+  font-family: Tahoma;
+  font-size: 32px;
+  text-align: start;
+  text-decoration: none;
+  color: #283171;
+  overflow: hidden;
+}
+header nav .nav-link {
+  font-family: Tahoma;
+  font-size: 32px;
+  text-align: start;
+  text-decoration: none;
+  color: #283171;
+  overflow: hidden;
 }
 
 footer {
-    grid-area: footer;
-    background-color: #283171;
-    display: flex;
-    justify-content: end;
-    align-content: center;
-    
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  background-color: #283171;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+footer ul li {
+  margin: 5px;
+  padding: 5px;
+}
+footer ul li a {
+  font-family: Tahoma;
+  font-size: 32px;
+  text-align: start;
+  text-decoration: none;
+  color: #F4F4F4;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: start;
+  align-content: center;
 }
 
 section {
-    /*background-color: #d9ff00;*/
-    grid-area: section;
-    
+  /*background-color: #d9ff00;*/
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+section .foto {
+  filter: grayscale(100%);
+  transition: all 2s;
+  width: 100%;
+  height: 100%;
+}
+section .foto:hover {
+  filter: grayscale(0);
+  transform: scale(1.5);
+}
+section h1 {
+  font-family: Tahoma;
+  font-size: 32px;
+  text-align: start;
+  text-decoration: underline;
+  color: #283171;
+  overflow: hidden;
+}
+section h2 {
+  font-family: Tahoma;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: none;
+  color: #283171;
+  overflow: hidden;
+}
+section p {
+  font-family: Tahoma;
+  font-size: 32px;
+  text-align: start;
+  text-decoration: none;
+  color: #283171;
+  overflow: hidden;
+}
+section .mb-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
+/*
+#divFotos{
+    @include fotoEfecto(100px,100px);
+}*/
 nav {
-
-    grid-area: nav;
-    background-color: #283171;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-}
-.navbar-nav, .container-fluid{
-    background-color: #F4F4F4;
-
-}
-.navbar-toggler, .navbar-toggler-icon{
-    border-color: #283171;
-}
-.navbar-brand{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 32px;
-    text-align: start;
-    text-decoration: none;
-    color: #283171;
-    overflow: hidden;
-}
-.nav-link{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    text-align: start;
-    text-decoration: none;
-    padding: 5px;
-    margin: 5px;
-    color: #283171;
-    overflow: hidden;
+  background-color: #283171;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
-/* Responsive */
 @media (min-width: 576px) {
-    #main {
-        grid-template-columns: auto ;
-        grid-template-rows: 15% 10% auto 15%;
-        grid-template-areas: "header" "nav" "section" "footer";
-}
-    /*#sectionServicios,#sectionProyectos {
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(3, auto);
-        justify-content: space-evenly;
-        align-content: center;
-}*/
-    section{
-        grid-template-columns: 1;
-        grid-template-rows:1;
-        justify-content: center;
-        align-content: center;
-}
-
- 
-    #ulNav{
-        display: none;
-    }
-
-   /* nav {
-        justify-content: space-around;
-    }*/
-    body{
-        background-color: red;
-    }
-}
-
-
-/* Medium devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {
-    #main {
-        grid-template-columns: auto ;
-        grid-template-rows: 15% 10% auto 15%;
-        grid-template-areas: "header" "nav" "section" "footer";
-    }
-    /*#sectionServicios,#sectionProyectos {
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(3, auto);
-        justify-content: center;
-        align-content: center;
-    }*/
-    section{
-        grid-template-columns: 2;
-        grid-template-rows:2;
-        justify-content: center;
-        align-content: center;
-    }
-
-
-    #ulNav{
-        display: none;
-    }
-
-    /* nav {
-        justify-content: space-around;
-}   */
-
-    body{
-     background-color: pink;
-    }
-}
-
-
-
-@media (min-width: 1200px) {
-
-    #main {
-    
-        grid-template-columns: 15% auto;
-        grid-template-rows: 15% 10% auto 15%;
-        grid-template-areas: "header header" "nav nav" "section section" "footer footer";
-    
-        /*column-gap: 15px;
-        row-gap: 15px;*/
-        
-    }
-    #sectionServicios,#sectionNosotros {
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(3, auto);
-    
-        justify-content: space-evenly;
-        align-content: center;
-    
-        /*column-gap: 15px;
-        row-gap: 15px;*/
-        }
-
-    #ulNav{
-
-        display: flex;
-    }
-
-    #menuBurger {
-
-            display: none;
-        }
-
-   /* nav {
-        justify-content: space-around;
-    }*/
-
-    body{
-
-        background-color: #F4F4F4;
-    }
-}
-
-/*      Menu    */
-
-nav{
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
-    padding:25px ;
-    margin: auto;
-}
-
-.navStyle{
-    background-color: #283171;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 32px;
-    text-align: start;
-    text-decoration: none;
-    color: white;
-}
-
-
-/*  Body  */
-
-.centradoLogo {
-
-    display: flex;
-
-    align-content: center;
+  header {
     justify-content: start;
-   /*margin: auto;*/
-    padding: 20px;
-
-}
-
-.fuente{
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 32px;
-    text-align: start;
-    text-decoration: none;
-    color: white;
-    overflow: hidden;
-}
-
-.fuenteTexto{
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 32px;
-    text-align: start;
-    text-decoration: none;
-    color: black;
-}
-
-.carrusel{
-
-    display: flex;
-    justify-content: center;
-
-    margin: 2% auto 2% auto;
-   
-    padding: 2% auto 2% auto;
-    
-    width: 50%;
-    font-size: 32px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-.foto {
-
-    filter: grayscale(100%);
-    transition: all 2s;
-    width: 80%;
-    height: auto;
-
-}
-.foto:hover {
-    
-    filter: grayscale(0);
-    transform: scale(1.5);
-}
-.fotoCont{
-    overflow: hidden;
-}
-#Inicio{
-
-    font-size: 32px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-
-}
-
-form{
-    display: flex;
-    justify-content: center;
     align-content: center;
-    margin: 10px;
-    padding: 10px;
+  }
 }
-.fuenteContactbox{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    text-align: start;
-    text-decoration: none;
-}
-
-/*  Footer  */
-
- footer ul{
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-footer ul li{
-    margin: 10px;
-    padding: 10px;
-}
-
- /* Grillas */
-
-#main,
-section {
-    display: grid;
-}
-
-/*#main {
-    column-gap: 10px;
-    row-gap: 10px;
-}*/
+/* Medium devices (tablets, 768px and up) *//*# sourceMappingURL=style.css.map */

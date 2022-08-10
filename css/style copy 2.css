@@ -27,7 +27,7 @@ section {
     grid-area: section;
     
 }
-/*
+
 nav {
 
     grid-area: nav;
@@ -60,7 +60,7 @@ nav {
     margin: 5px;
     color: #283171;
     overflow: hidden;
-}*/
+}
 
 /* Responsive */
 @media (min-width: 576px) {
@@ -69,16 +69,16 @@ nav {
         grid-template-rows: 15% 10% auto 15%;
         grid-template-areas: "header" "nav" "section" "footer";
 }
-    #sectionServicios,#sectionProyectos {
+    /*#sectionServicios,#sectionProyectos {
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(3, auto);
         justify-content: space-evenly;
         align-content: center;
-}
+}*/
     section{
         grid-template-columns: 1;
         grid-template-rows:1;
-        justify-content: space-evenly;
+        justify-content: center;
         align-content: center;
 }
 
@@ -104,16 +104,16 @@ nav {
         grid-template-rows: 15% 10% auto 15%;
         grid-template-areas: "header" "nav" "section" "footer";
     }
-    #sectionServicios,#sectionProyectos {
+    /*#sectionServicios,#sectionProyectos {
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(3, auto);
-        justify-content: space-evenly;
+        justify-content: center;
         align-content: center;
-    }
+    }*/
     section{
         grid-template-columns: 2;
         grid-template-rows:2;
-        justify-content: space-evenly;
+        justify-content: center;
         align-content: center;
     }
 
@@ -176,77 +176,6 @@ nav {
     }
 }
 
-/*
-@media screen and (min-width: 320px) {
-    #main {
-        grid-template-columns: auto ;
-        grid-template-rows: 15% 10% auto 15%;
-        grid-template-areas: "header" "nav" "section" "footer";
-}
-    #sectionServicios,#sectionProyectos {
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(3, auto);
-        justify-content: space-evenly;
-        align-content: center;
-}
-    section{
-        grid-template-columns: 1;
-        grid-template-rows:1;
-        justify-content: space-evenly;
-        align-content: center;
-}
-
- 
-    #ulNav{
-        display: none;
-    }
-
-   /* nav {
-        justify-content: space-around;
-    }
-
-}
-
-@media screen and (min-width: 1200px) {
-    #main {
-    
-        grid-template-columns: 15% auto;
-        grid-template-rows: 15% 10% auto 15%;
-        grid-template-areas: "header header" "nav nav" "section section" "footer footer";
-    
-        /*column-gap: 15px;
-        row-gap: 15px;
-        
-    }
-    #sectionServicios,#sectionNosotros {
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(3, auto);
-    
-        justify-content: space-evenly;
-        align-content: center;
-    
-        /*column-gap: 15px;
-        row-gap: 15px;
-        }
-
-    #ulNav{
-
-        display: flex;
-    }
-
-    #menuBurger {
-
-            display: none;
-        }
-
-   /* nav {
-        justify-content: space-around;
-    }
-    
-}*/
-
-
-
 /*      Menu    */
 
 nav{
@@ -259,6 +188,15 @@ nav{
     margin: auto;
 }
 
+.navStyle{
+    background-color: #283171;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    text-align: start;
+    text-decoration: none;
+    color: white;
+}
+
 
 /*  Body  */
 
@@ -268,8 +206,7 @@ nav{
 
     align-content: center;
     justify-content: start;
-
-    /*margin: auto;*/
+   /*margin: auto;*/
     padding: 20px;
 
 }
@@ -311,6 +248,8 @@ nav{
 
     filter: grayscale(100%);
     transition: all 2s;
+    width: 80%;
+    height: auto;
 
 }
 .foto:hover {
@@ -343,17 +282,9 @@ form{
     text-decoration: none;
 }
 
-#articleIndex{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
 /*  Footer  */
 
-/* footer ul{
+ footer ul{
     display: flex;
     list-style: none;
     flex-direction: row;
@@ -364,7 +295,7 @@ form{
 footer ul li{
     margin: 10px;
     padding: 10px;
-}*/
+}
 
  /* Grillas */
 

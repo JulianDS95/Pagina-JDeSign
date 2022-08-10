@@ -1,0 +1,40 @@
+
+
+
+@mixin fuenteGeneral($font, $size, $aling, $decoration, $color, $overflow){
+
+    font-family: $font;
+    font-size: $size;
+    text-align: $aling;
+    text-decoration: $decoration;
+    color: $color;
+    overflow: $overflow;
+}
+
+@mixin fuenteTexto($font, $size, $aling, $decoration, $color, $overflow){
+
+    font-family: $font;
+    font-size: $size;
+    text-align: $aling;
+    text-decoration: $decoration;
+    color: $color;
+    overflow: $overflow;
+}
+
+
+
+
+@mixin fotoEfecto($porcentaje) {
+
+    filter: grayscale(100%);
+    transition: all 2s;
+
+    width: $porcentaje;
+    height: $porcentaje;
+
+    &:hover{
+        filter: grayscale(0);
+        transform: scale(1.5);
+    }
+
+}
