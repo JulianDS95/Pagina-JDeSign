@@ -85,12 +85,28 @@ section {
     p{
         @include fuenteGeneral(Tahoma, 32px, start, none, $colorFondodetalles, hidden);
     }
-    .mb-3{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
+    div{
+        div{
+            div{
+
+                h5{
+                    @include fuenteGeneral(Tahoma, 32px, start, none, white, hidden);
+                }
+                div{
+                    .card-title{
+
+                        background-color: map-get($map: $backgroundServicioss, $key: fondoTitulossercios);
+                    }
+                    div{
+                      .carousel-inner{
+                        background-color: map-get($map: $backgroundServicioss, $key: fondoFotosservicios);
+                      }
+                    }
+                }
+            }
+        }
     }
+   
 }
 /*
 #divFotos{

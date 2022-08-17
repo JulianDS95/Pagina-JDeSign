@@ -1,3 +1,17 @@
+.fuenteTitulos {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 48px;
+  text-align: start;
+  text-decoration: none;
+  color: white;
+}
+
+.fuenteTitulos--secundario {
+  font-size: 32px;
+  text-decoration: underline;
+  text-align: center;
+}
+
 body {
   background-color: #F4F4F4;
 }
@@ -104,11 +118,19 @@ section p {
   color: #283171;
   overflow: hidden;
 }
-section .mb-3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+section div div div h5 {
+  font-family: Tahoma;
+  font-size: 32px;
+  text-align: start;
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+}
+section div div div div .card-title {
+  background-color: #283171;
+}
+section div div div div div .carousel-inner {
+  background-color: lightgrey;
 }
 
 /*

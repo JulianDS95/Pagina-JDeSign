@@ -1,6 +1,4 @@
 
-
-
 @mixin fuenteGeneral($font, $size, $aling, $decoration, $color, $overflow){
 
     font-family: $font;
@@ -38,3 +36,28 @@
     }
 
 }
+
+.fuenteTitulos{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48px;
+    text-align: start;
+    text-decoration: none;
+    color: white;
+}
+.fuenteTitulos--secundario{
+    font-size: 32px;
+    text-decoration: underline;
+    text-align: center;
+    
+}
+
+$backgroundServicioss:(
+
+    fondoFotosservicios: lightgrey,
+    fondoTitulossercios: #283171,
+
+)
+
+
+
