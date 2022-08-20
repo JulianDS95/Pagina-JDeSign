@@ -9,19 +9,6 @@
     overflow: $overflow;
 }
 
-@mixin fuenteTexto($font, $size, $aling, $decoration, $color, $overflow){
-
-    font-family: $font;
-    font-size: $size;
-    text-align: $aling;
-    text-decoration: $decoration;
-    color: $color;
-    overflow: $overflow;
-}
-
-
-
-
 @mixin fotoEfecto($porcentaje) {
 
     filter: grayscale(100%);
@@ -35,6 +22,62 @@
         transform: scale(1.5);
     }
 
+}
+
+@mixin alineacionFooter($justify, $aling, $background) {
+
+        display: flex;
+        justify-content: $justify;
+        align-content: $aling;
+        background-color: $background;
+
+    }
+
+@mixin listaFooter{
+
+    ul{
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        li{
+            margin: 5px;
+            padding: 5px;
+            a{
+                @include fuenteGeneral(Tahoma, 32px, start, none, $colorFondogrl, hidden);
+
+            }
+        }
+
+    }
+    
+}
+
+@mixin genericaContacto($margin, $padding) {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    margin: $margin;
+    padding: $padding;
+    .btn{
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: $colorFondodetalles;
+
+        @include fuenteGeneral(Tahoma, 16px, center, none, white, hidden);
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid $colorFondodetalles;
+        border-radius: 10px;
+
+        height: auto;
+        width: 100px;
+    }
+    
 }
 
 .fuenteTitulos{

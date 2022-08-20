@@ -12,42 +12,345 @@
   text-align: center;
 }
 
+/* Variables */
+/* Aspectos comunes*/
 body {
   background-color: #F4F4F4;
 }
 
-header {
+header, section {
   display: flex;
-  align-content: center;
 }
-header nav {
+
+nav {
   display: flex;
   justify-content: space-around;
   align-content: center;
 }
-header nav .navbar-nav, header nav .container-fluid {
+nav .navbar-nav, nav .container-fluid {
   background-color: #F4F4F4;
 }
-header nav .navbar-toggler, header nav .navbar-toggler-icon {
+nav .navbar-toggler, nav .navbar-toggler-icon {
   border-color: #283171;
 }
-header nav .navbar-brand {
-  font-family: Tahoma;
-  font-size: 32px;
-  text-align: start;
-  text-decoration: none;
-  color: #283171;
-  overflow: hidden;
-}
-header nav .nav-link {
-  font-family: Tahoma;
-  font-size: 32px;
-  text-align: start;
-  text-decoration: none;
-  color: #283171;
-  overflow: hidden;
-}
 
+/*Smartphone*/
+@media (min-width: 576px) {
+  header {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+  }
+  header nav .navbar-brand {
+    font-family: Tahoma;
+    font-size: 16px;
+    text-align: start;
+    text-decoration: none;
+    color: #283171;
+    overflow: hidden;
+    background-color: #F4F4F4;
+  }
+  header nav .nav-link {
+    font-family: Tahoma;
+    font-size: 16px;
+    text-align: start;
+    text-decoration: none;
+    color: #283171;
+    overflow: hidden;
+  }
+  header nav .logoHeader {
+    width: 50%;
+    height: auto;
+  }
+  section .container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  section h1 {
+    display: flex;
+    justify-content: start;
+    font-family: Tahoma;
+    font-size: 16px;
+    text-align: start;
+    text-decoration: none;
+    color: #283171;
+    overflow: hidden;
+  }
+  section form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  section form .titulo {
+    display: flex;
+    justify-content: start;
+    font-family: Tahoma;
+    font-size: 16px;
+    text-align: start;
+    text-decoration: underline;
+    color: #283171;
+    overflow: hidden;
+  }
+  section form .btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #283171;
+    font-family: Tahoma;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #283171;
+    border-radius: 10px;
+    height: auto;
+    width: 100px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #283171;
+  }
+  footer ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+  }
+  footer ul li {
+    margin: 5px;
+    padding: 5px;
+  }
+  footer ul li a {
+    font-family: Tahoma;
+    font-size: 32px;
+    text-align: start;
+    text-decoration: none;
+    color: #F4F4F4;
+    overflow: hidden;
+  }
+}
+/* Tablets */
+@media (min-width: 768px) {
+  header {
+    align-content: center;
+  }
+  header nav .navbar-brand {
+    font-family: Tahoma;
+    font-size: 32px;
+    text-align: start;
+    text-decoration: none;
+    color: #283171;
+    overflow: hidden;
+  }
+  header nav .nav-link {
+    font-family: Tahoma;
+    font-size: 32px;
+    text-align: start;
+    text-decoration: none;
+    color: #283171;
+    overflow: hidden;
+  }
+  section form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    margin: 15px;
+    padding: 15px;
+  }
+  section form .btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #283171;
+    font-family: Tahoma;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #283171;
+    border-radius: 10px;
+    height: auto;
+    width: 100px;
+  }
+  section form h1 {
+    display: flex;
+    justify-content: start;
+    font-family: Tahoma;
+    font-size: 16px;
+    text-align: start;
+    text-decoration: underline;
+    color: #283171;
+    overflow: hidden;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #283171;
+  }
+  footer ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+  }
+  footer ul li {
+    margin: 5px;
+    padding: 5px;
+  }
+  footer ul li a {
+    font-family: Tahoma;
+    font-size: 32px;
+    text-align: start;
+    text-decoration: none;
+    color: #F4F4F4;
+    overflow: hidden;
+  }
+}
+/* Desktop */
+@media (min-width: 1200px) {
+  header {
+    align-content: center;
+  }
+  header nav .navbar-brand {
+    font-family: Tahoma;
+    font-size: 32px;
+    text-align: start;
+    text-decoration: none;
+    color: #283171;
+    overflow: hidden;
+  }
+  header nav .nav-link {
+    font-family: Tahoma;
+    font-size: 32px;
+    text-align: start;
+    text-decoration: none;
+    color: #283171;
+    overflow: hidden;
+  }
+  section {
+    flex-direction: column;
+  }
+  section .carouselImg {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+  }
+  section .video {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    padding: 20px;
+  }
+  section h1 {
+    display: flex;
+    justify-content: start;
+    font-family: Tahoma;
+    font-size: 32px;
+    text-align: start;
+    text-decoration: underline;
+    color: #283171;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+  }
+  .foto {
+    filter: grayscale(100%);
+    transition: all 2s;
+    width: 100%;
+    height: 100%;
+  }
+  .foto:hover {
+    filter: grayscale(0);
+    transform: scale(1.5);
+  }
+  h2 {
+    font-family: Tahoma;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+    color: #283171;
+    overflow: hidden;
+  }
+  p {
+    font-family: Tahoma;
+    font-size: 32px;
+    text-align: start;
+    text-decoration: none;
+    color: #283171;
+    overflow: hidden;
+  }
+  div div div h5 {
+    font-family: Tahoma;
+    font-size: 32px;
+    text-align: start;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+  }
+  div div div div .card-title {
+    background-color: #283171;
+  }
+  div div div div div .carousel-inner {
+    background-color: lightgrey;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+    padding: 20px;
+    width: 1140px;
+    height: auto;
+  }
+  form .btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #283171;
+    font-family: Tahoma;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #283171;
+    border-radius: 10px;
+    height: auto;
+    width: 100px;
+  }
+  form h1 {
+    display: flex;
+    justify-content: start;
+    font-family: Tahoma;
+    font-size: 32px;
+    text-align: start;
+    text-decoration: underline;
+    color: #283171;
+    overflow: hidden;
+  }
+}
 footer {
   display: flex;
   justify-content: end;
@@ -70,84 +373,4 @@ footer ul li a {
   text-decoration: none;
   color: #F4F4F4;
   overflow: hidden;
-}
-
-header {
-  display: flex;
-  justify-content: start;
-  align-content: center;
-}
-
-section {
-  /*background-color: #d9ff00;*/
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-section .foto {
-  filter: grayscale(100%);
-  transition: all 2s;
-  width: 100%;
-  height: 100%;
-}
-section .foto:hover {
-  filter: grayscale(0);
-  transform: scale(1.5);
-}
-section h1 {
-  font-family: Tahoma;
-  font-size: 32px;
-  text-align: start;
-  text-decoration: underline;
-  color: #283171;
-  overflow: hidden;
-}
-section h2 {
-  font-family: Tahoma;
-  font-size: 32px;
-  text-align: center;
-  text-decoration: none;
-  color: #283171;
-  overflow: hidden;
-}
-section p {
-  font-family: Tahoma;
-  font-size: 32px;
-  text-align: start;
-  text-decoration: none;
-  color: #283171;
-  overflow: hidden;
-}
-section div div div h5 {
-  font-family: Tahoma;
-  font-size: 32px;
-  text-align: start;
-  text-decoration: none;
-  color: white;
-  overflow: hidden;
-}
-section div div div div .card-title {
-  background-color: #283171;
-}
-section div div div div div .carousel-inner {
-  background-color: lightgrey;
-}
-
-/*
-#divFotos{
-    @include fotoEfecto(100px,100px);
-}*/
-nav {
-  background-color: #283171;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-}
-
-@media (min-width: 576px) {
-  header {
-    justify-content: start;
-    align-content: center;
-  }
-}
-/* Medium devices (tablets, 768px and up) *//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
