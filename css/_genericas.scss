@@ -51,6 +51,13 @@
     }
     
 }
+@mixin genericaSection {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
 
 @mixin genericaContacto($margin, $padding) {
 
@@ -98,7 +105,8 @@
 $backgroundServicioss:(
 
     fondoFotosservicios: lightgrey,
-    fondoTitulossercios: #283171,
+    fondoTitulossercios: grey,
+    backgroundCardtext: lightgrey,
 
 )
 
