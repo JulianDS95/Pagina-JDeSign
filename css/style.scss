@@ -173,7 +173,7 @@ header{
                 align-content: center;
                 margin: 10px;
                 padding: 10px;
-                width: 280px;
+                width: 260px;
                 height: auto;
                 float: left;
             }
@@ -472,7 +472,8 @@ header{
                 @include fuenteGeneral(Tahoma, 32px, start, none, black, hidden);
             }
             .fuenteTexto{
-                @include fuenteGeneral(Tahoma, 16px, justify, none, black, hidden);
+                
+                @include fuenteGeneral(Tahoma, 32px, justify, none, black, hidden);
 
             }
             .img-fluid{
